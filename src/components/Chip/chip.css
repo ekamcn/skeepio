@@ -1,0 +1,103 @@
+.selected-list-wrapper {
+	margin-top: 17px;
+	height: 159px;
+	padding: 0 61px;
+}
+
+.selected-chip-wrapper {
+	overflow-x: scroll;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 23px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.selected-chip-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.chip {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+}
+
+.chip-text {
+	width: 96px;
+	font-family: var(--ff-Montserrat);
+	font-weight: var(--fw-300);
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.chip-image {
+	border-radius: 100%;
+	height: 95px;
+	width: 95px;
+	background: #fff;
+	border: 1px solid var(--light-gray);
+}
+
+.chip-closing-button {
+	position: absolute;
+	height: 97px;
+	width: 97px;
+	background: #00000020;
+	border-radius: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.chip-closing-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 19px;
+	width: 19px;
+	background: #ffffff;
+	padding: 2px;
+	border: 1px solid var(--light-gray);
+	border-radius: 100%;
+}
+
+.chip:hover .chip-closing-button {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.selected-list-wrapper{
+		height: 100px;
+		margin-top: 22px;
+	}
+	.selected-chip-wrapper {
+		gap: 16px;
+	}
+	.chip-image {
+		width: 49px;
+		height: 49px;
+	}
+	.chip-text {
+		width: 55px;
+		font-weight: var(--fw-300);
+		font-size: 8px;
+	}
+
+	.chip-closing-button {
+		display: flex;
+		justify-content: end;
+		align-items: flex-start;
+		height: 49px;
+		width: 49px;
+		background: rgba(0, 0, 0, 0);
+	}
+}

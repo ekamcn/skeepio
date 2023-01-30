@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@100;400;500;600&display=swap");
+
+#root {
+	max-width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+@media (max-width: 768px) {
+	#root {
+		height: 100vh;
+	}
+}
+
+body {
+	--primary-orange: #ec751e;
+	--light-gray: #d9d9d9;
+	--ff-Inter: "Inter", sans-serif;
+	--ff-Montserrat: "Montserrat", sans-serif;
+	--fw-100: 100;
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-600: 600;
+	background-color: #3e3e3e40;
+	margin: 0;
+	padding: 0;
+}
